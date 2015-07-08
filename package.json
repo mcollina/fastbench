@@ -1,0 +1,23 @@
+{
+  "name": "fastbench",
+  "version": "0.0.1",
+  "description": "the simplest benchmark you can run on node",
+  "main": "bench.js",
+  "scripts": {
+    "test": "tape test | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcollina/fastbench.git"
+  },
+  "keywords": [
+    "benchmark",
+    "fast"
+  ],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcollina/fastbench/issues"
+  },
+  "homepage": "https://github.com/mcollina/fastbench#readme"
+}
