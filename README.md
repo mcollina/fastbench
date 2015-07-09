@@ -1,4 +1,4 @@
-# fastbench
+# fastbench&nbsp;&nbsp;[![Build Status](https://travis-ci.org/mcollina/fastbench.png)](https://travis-ci.org/mcollina/fastbench)
 
 The simplest benchmark you can run on node
 
