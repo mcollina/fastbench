@@ -1,6 +1,6 @@
 {
   "name": "fastbench",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "the simplest benchmark you can run on node",
   "main": "bench.js",
   "scripts": {
