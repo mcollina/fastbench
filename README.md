@@ -57,7 +57,7 @@ acceps two options:
 
 * `iterations`: the number of iterations (required)
 * `max`: is a an alias for iterations
-* `color`: if the output should have color (defaut: true)
+* `color`: if the output should have color (default: true)
 
 ## License
 
