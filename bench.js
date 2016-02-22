@@ -2,11 +2,8 @@
 
 var fastseries = require('fastseries')
 var chalk = require('chalk')
-var colors = Object.keys(chalk.styles.colors)
+var colors = ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'gray']
 var console = require('console')
-
-// avoid black
-colors.shift()
 
 function build (functions, opts) {
 
