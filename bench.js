@@ -1,7 +1,6 @@
 'use strict'
 
 var fastseries = require('fastseries')
-var console = require('console')
 
 function build (functions, opts) {
 
@@ -43,8 +42,6 @@ function build (functions, opts) {
   }
 
   function bench (func, done) {
-    }
-
     var funcName = func.name
     var count = -1
 
@@ -61,7 +58,7 @@ function build (functions, opts) {
           index: currentIndex,
           name: funcName,
           iterations: max,
-          duration: diff[0] * 1e9 + diff[1], // nanoseconds
+          duration: diff[0] * 1e9 + diff[1] // nanoseconds
         }
         results[currentIndex] = result
         currentIndex++
