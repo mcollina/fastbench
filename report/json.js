@@ -1,15 +1,15 @@
 var util = require('util')
 var Report = require('../report')
 
-function JSONReport (opts) {
+function JSONReporter (opts) {
   Report.call(this, opts)
 }
-util.inherits(JSONReport, Report)
+util.inherits(JSONReporter, Report)
 
-JSONReport.prototype.write = function () {}
+JSONReporter.prototype.write = function () {}
 
-JSONReport.prototype.summary = function () {
+JSONReporter.prototype.summary = function () {
   console.log(JSON.stringify(this.results, null, 2))
 }
 
-module.exports = JSONReport
+module.exports = JSONReporter

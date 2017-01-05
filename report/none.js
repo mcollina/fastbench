@@ -1,13 +1,13 @@
 var util = require('util')
 var Report = require('../report')
 
-function NoneReport (opts) {
+function NoneReporter (opts) {
   Report.call(this, opts)
 }
-util.inherits(NoneReport, Report)
+util.inherits(NoneReporter, Report)
 
-NoneReport.prototype.write = function () {}
+NoneReporter.prototype.write = function () {}
 
-NoneReport.prototype.summary = function () {}
+NoneReporter.prototype.summary = function () {}
 
-module.exports = NoneReport
+module.exports = NoneReporter
