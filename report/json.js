@@ -8,8 +8,8 @@ util.inherits(JSONReporter, Report)
 
 JSONReporter.prototype.write = function () {}
 
-JSONReporter.prototype.summary = function () {
-  console.log(JSON.stringify(this.results, null, 2))
+JSONReporter.prototype.summary = function (results) {
+  console.log(JSON.stringify(results, null, 2))
 }
 
 module.exports = JSONReporter
