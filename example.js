@@ -12,6 +12,6 @@ var run = bench([
   function benchNextTick (done) {
     process.nextTick(done)
   }
-], 1000)
+], { iterations: 1000, reporter: 'text' })
 
 run(run)

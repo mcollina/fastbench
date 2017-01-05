@@ -5,7 +5,7 @@
   "main": "bench.js",
   "scripts": {
     "lint": "standard",
-    "test": "tape test.js | faucet"
+    "test": "tape test.js report/*.test.js | faucet"
   },
   "pre-commit": [
     "lint",
