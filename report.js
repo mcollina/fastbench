@@ -1,7 +1,6 @@
 'use strict'
 
-function Reporter (results, opts) {
-  this.results = results
+function Reporter (opts) {
   this.options = opts
 }
 
