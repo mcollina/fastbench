@@ -1,6 +1,6 @@
 'use strict'
 
-const hasAnsi = require('has-ansi')
+var hasAnsi = require('has-ansi')
 var test = require('tape')
 var bench = require('./')
 var proxyquire = require('proxyquire')
