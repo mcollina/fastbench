@@ -1,5 +1,6 @@
 'use strict'
 
+var hasAnsi = require('has-ansi')
 var test = require('tape')
 var bench = require('./')
 var proxyquire = require('proxyquire')
@@ -75,10 +76,10 @@ test('has color', function (t) {
   var bench = proxyquire('./', {
     console: {
       time: function (key) {
-        t.ok(chalk.hasColor(key), 'has color')
+        t.ok(hasAnsi(key), 'has color')
       },
       timeEnd: function (key) {
-        t.ok(chalk.hasColor(key), 'has color')
+        t.ok(hasAnsi(key), 'has color')
       }
     }
   })
@@ -100,10 +101,10 @@ test('disable color', function (t) {
   var bench = proxyquire('./', {
     console: {
       time: function (key) {
-        t.notOk(chalk.hasColor(key), 'has no color')
+        t.notOk(hasAnsi(key), 'has no color')
       },
       timeEnd: function (key) {
-        t.notOk(chalk.hasColor(key), 'has no color')
+        t.notOk(hasAnsi(key), 'has no color')
       }
     }
   })
